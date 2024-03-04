@@ -154,7 +154,7 @@
                 0,
                 0,
                 0,
-                0,
+                15,
                 0,
                 15,
                 0,
@@ -749,7 +749,7 @@
                     "paletteId": "",
                     "isPinned": false,
                     "persistent": false,
-                    "collisionGroup": "",
+                    "collisionGroup": "1",
                     "symbol": "actor_2",
                     "script": [
                         {
@@ -1072,7 +1072,7 @@
                     "args": {
                         "variable": "L0",
                         "__collapseElse": false,
-                        "__comment": false,
+                        "__comment": true,
                         "__collapse": true,
                         "__disableElse": true
                     },
@@ -1967,12 +1967,28 @@
                             "command": "EVENT_TEXT",
                             "args": {
                                 "text": [
-                                    "Ooga booga, \nsign in.",
-                                    "*show them a map"
+                                    "Welcome to\nFunnelle Hall.",
+                                    "Check this map out\nof the campus."
                                 ],
                                 "avatarId": ""
                             },
                             "id": "20b14552-8f80-41da-b39f-be93989c32ab"
+                        },
+                        {
+                            "command": "EVENT_SCENE_PUSH_STATE",
+                            "args": {},
+                            "id": "7d10690f-2ca3-48af-9ff5-0dfd3fece3ff"
+                        },
+                        {
+                            "command": "EVENT_SWITCH_SCENE",
+                            "args": {
+                                "sceneId": "e557396c-30f3-4789-b5c0-faca3d3be3de",
+                                "x": 0,
+                                "y": 0,
+                                "direction": "",
+                                "fadeSpeed": "2"
+                            },
+                            "id": "386728e4-a2a9-4018-93e5-fc882d834a80"
                         }
                     ],
                     "startScript": [],
@@ -19372,7 +19388,7 @@
             "autoFadeSpeed": 1,
             "id": "00bbdf10-3dcc-411b-896f-a247a4ec7240",
             "symbol": "scene_40",
-            "x": 1651.9999999999995,
+            "x": 1531.9999999999995,
             "y": 1878.6666666666658,
             "actors": [],
             "triggers": [
@@ -21580,8 +21596,8 @@
             "autoFadeSpeed": 1,
             "id": "d69edbcc-7cc3-4d8a-810b-6dc568bae465",
             "symbol": "scene_50",
-            "x": 141.33333333333334,
-            "y": 196.00000000000003,
+            "x": 153.33333333333334,
+            "y": 936,
             "actors": [],
             "triggers": [],
             "script": [],
@@ -22682,8 +22698,8 @@
             "autoFadeSpeed": 1,
             "id": "d5285903-4c32-4ee1-8127-009a751d071b",
             "symbol": "scene_51",
-            "x": 242.66666666666669,
-            "y": 445.33333333333337,
+            "x": 278.6666666666667,
+            "y": 1257.3333333333335,
             "actors": [],
             "triggers": [],
             "script": [],
@@ -22703,8 +22719,8 @@
             "autoFadeSpeed": 1,
             "id": "3fa95f96-7bcf-434f-87b1-494da19832c7",
             "symbol": "scene_52",
-            "x": 322.66666666666663,
-            "y": 876,
+            "x": 354.66666666666663,
+            "y": 1672,
             "actors": [],
             "triggers": [],
             "script": [],
@@ -26334,7 +26350,7 @@
                         ],
                         "override": false,
                         "__scriptTabs": "press",
-                        "__comment": true
+                        "__comment": false
                     },
                     "children": {
                         "true": [
@@ -27164,6 +27180,426 @@
             "playerHit1Script": [],
             "playerHit2Script": [],
             "playerHit3Script": []
+        },
+        {
+            "name": "Map",
+            "backgroundId": "d19844fa-34fe-477d-bfab-596b4fac15a1",
+            "width": 20,
+            "height": 18,
+            "type": "TOPDOWN",
+            "paletteIds": [],
+            "spritePaletteIds": [],
+            "collisions": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+            ],
+            "autoFadeSpeed": 1,
+            "id": "e557396c-30f3-4789-b5c0-faca3d3be3de",
+            "symbol": "scene_58",
+            "x": 2772.263736263736,
+            "y": 3433.802197802198,
+            "actors": [],
+            "triggers": [],
+            "script": [
+                {
+                    "command": "EVENT_ACTOR_HIDE",
+                    "args": {
+                        "actorId": "$self$"
+                    },
+                    "id": "6ee1d0c7-4df4-458e-b467-31c44692a00a"
+                },
+                {
+                    "command": "EVENT_SET_INPUT_SCRIPT",
+                    "args": {
+                        "input": [
+                            "start",
+                            "b",
+                            "a",
+                            "left",
+                            "up",
+                            "down",
+                            "right",
+                            "select"
+                        ],
+                        "override": true,
+                        "__scriptTabs": "press",
+                        "__collapse": false
+                    },
+                    "children": {
+                        "true": [
+                            {
+                                "command": "EVENT_SCENE_POP_ALL_STATE",
+                                "args": {
+                                    "fadeSpeed": 1
+                                },
+                                "id": "8539ecfa-b272-4a67-8889-83411cebcb9a"
+                            }
+                        ]
+                    },
+                    "id": "dae650d1-6084-4369-be96-94407797231f"
+                }
+            ],
+            "playerHit1Script": [],
+            "playerHit2Script": [],
+            "playerHit3Script": []
         }
     ],
     "backgrounds": [
@@ -27254,6 +27690,16 @@
             "imageHeight": 160,
             "filename": "HorizontalWalk2.png",
             "tileColors": []
+        },
+        {
+            "id": "d19844fa-34fe-477d-bfab-596b4fac15a1",
+            "name": "Map",
+            "symbol": "bg_map",
+            "width": 20,
+            "height": 18,
+            "imageWidth": 160,
+            "imageHeight": 144,
+            "filename": "Map.png"
         },
         {
             "id": "d3fc6770-089b-461c-9163-c2deb70891e1",
@@ -29037,7 +29483,7 @@
             "boundsX": 0,
             "boundsY": 0,
             "boundsWidth": 16,
-            "boundsHeight": 16,
+            "boundsHeight": 32,
             "animSpeed": 15
         },
         {
@@ -31459,7 +31905,7 @@
                     ]
                 }
             ],
-            "numTiles": 1,
+            "numTiles": 2,
             "canvasWidth": 16,
             "canvasHeight": 16,
             "boundsX": 0,
@@ -33828,6 +34274,15 @@
                     "id": "ab14522d-d537-43d4-be19-b13c803311b3"
                 },
                 {
+                    "command": "EVENT_WAIT",
+                    "args": {
+                        "time": 0.5,
+                        "frames": 30,
+                        "__collapse": true
+                    },
+                    "id": "1908a911-b1a3-4bf3-be10-bbd53138eed9"
+                },
+                {
                     "command": "EVENT_ACTOR_EMOTE",
                     "args": {
                         "actorId": "$self$",
@@ -33924,60 +34379,102 @@
                         "avatarX": 2,
                         "avatarY": 2,
                         "avatarWidth": 3,
-                        "orientation": "left"
+                        "orientation": "left",
+                        "__collapse": true
                     },
                     "id": "e64c0298-78fc-4957-ba3f-27679a8a7287"
                 },
                 {
-                    "command": "EVENT_TEXT",
+                    "command": "EVENT_DIALOGUE_NAME_LARGE_AVATAR",
                     "args": {
+                        "__scriptTabs": "text",
                         "text": [
                             "I just can't shake\nthe feeling",
                             "something bad is\ngoing to happen."
                         ],
+                        "nameTag": "Mac",
+                        "nameX": 2,
+                        "avatarType": "small",
                         "avatarId": "",
-                        "__label": "Mac D3",
-                        "__collapse": false
+                        "largeAvatar": "",
+                        "avatarX": 2,
+                        "avatarY": 2,
+                        "avatarWidth": 3,
+                        "orientation": "left",
+                        "__collapse": true
                     },
-                    "id": "00bec919-ae55-4aa1-a43a-95bf39e7e733"
+                    "id": "de143e90-6809-449d-9411-12008edfb3dd"
                 },
                 {
-                    "command": "EVENT_TEXT",
+                    "command": "EVENT_DIALOGUE_NAME_LARGE_AVATAR",
                     "args": {
+                        "__scriptTabs": "text",
                         "text": [
                             "Well Mac, if you\nthink you need ",
                             "some extra help. \nI know what you",
                             "need."
                         ],
+                        "nameTag": "Ron",
+                        "nameX": 2,
+                        "avatarType": "small",
                         "avatarId": "",
-                        "__collapse": false,
-                        "__label": "Ron D3"
+                        "largeAvatar": "",
+                        "avatarX": 2,
+                        "avatarY": 2,
+                        "avatarWidth": 3,
+                        "orientation": "left",
+                        "__collapse": true
                     },
-                    "id": "15af048b-80fe-40ab-b7d1-75a90df969e1"
+                    "id": "782578cd-80ae-456f-b21d-b70bd3a1e49e"
                 },
                 {
-                    "command": "EVENT_TEXT",
+                    "command": "EVENT_DIALOGUE_NAME_LARGE_AVATAR",
                     "args": {
+                        "__scriptTabs": "text",
                         "text": [
                             "If you say get\nhigh I swear to-"
                         ],
+                        "nameTag": "Mac",
+                        "nameX": 2,
+                        "avatarType": "small",
                         "avatarId": "",
-                        "__label": "Mac D4",
-                        "__collapse": false
+                        "largeAvatar": "",
+                        "avatarX": 2,
+                        "avatarY": 2,
+                        "avatarWidth": 3,
+                        "orientation": "left",
+                        "__collapse": true
                     },
-                    "id": "91fd8cf6-978a-46fe-8a46-59c069693384"
+                    "id": "6f4358a1-3d1e-400d-9925-4efa272cfefd"
                 },
                 {
-                    "command": "EVENT_TEXT",
+                    "command": "EVENT_DIALOGUE_NAME_LARGE_AVATAR",
                     "args": {
+                        "__scriptTabs": "text",
                         "text": [
                             "No man. There's\nthis legend."
                         ],
+                        "nameTag": "Ron",
+                        "nameX": 2,
+                        "avatarType": "small",
                         "avatarId": "",
-                        "__label": "Ron D4",
-                        "__collapse": false
+                        "largeAvatar": "",
+                        "avatarX": 2,
+                        "avatarY": 2,
+                        "avatarWidth": 3,
+                        "orientation": "left",
+                        "__collapse": true
                     },
-                    "id": "afc96987-4404-464a-8846-9b8c68402a0c"
+                    "id": "96dc315d-e816-46bc-b89e-f84acaabf4c8"
+                },
+                {
+                    "command": "EVENT_ACTOR_EMOTE",
+                    "args": {
+                        "actorId": "$self$",
+                        "emoteId": "70a4ce25-1fe4-4ab1-aee9-21255e70fb76",
+                        "__collapse": true
+                    },
+                    "id": "06a69db1-53d7-4337-885a-f715f31d58b4"
                 },
                 {
                     "command": "EVENT_TEXT",
@@ -33987,92 +34484,140 @@
                         ],
                         "avatarId": "",
                         "__label": "Mac D5",
-                        "__collapse": false
+                        "__collapse": false,
+                        "__comment": true
                     },
                     "id": "d541791a-467e-4b4a-8c90-9facde2f5168"
                 },
                 {
-                    "command": "EVENT_TEXT",
+                    "command": "EVENT_DIALOGUE_NAME_LARGE_AVATAR",
                     "args": {
+                        "__scriptTabs": "text",
                         "text": [
                             "Yeah man. They say\nthat somewhere on",
                             "campus is a golden\npin forged by an",
                             "insomniac\nengineering",
                             "student. Any who \nhold it will pass",
-                            "all their exams.\n"
+                            "all their exams."
                         ],
+                        "nameTag": "Ron",
+                        "nameX": 2,
+                        "avatarType": "small",
                         "avatarId": "",
-                        "__label": "Ron D5",
-                        "__collapse": false
+                        "largeAvatar": "",
+                        "avatarX": 2,
+                        "avatarY": 2,
+                        "avatarWidth": 3,
+                        "orientation": "left",
+                        "__collapse": true
                     },
-                    "id": "96cbdce5-d52c-44b1-b8de-7e0d767938b1"
+                    "id": "4064382c-86ed-4aa9-9c36-de9075874804"
                 },
                 {
-                    "command": "EVENT_TEXT",
+                    "command": "EVENT_DIALOGUE_NAME_LARGE_AVATAR",
                     "args": {
+                        "__scriptTabs": "nameTag",
                         "text": [
                             "Well where is it?"
                         ],
+                        "nameTag": "Mac",
+                        "nameX": 2,
+                        "avatarType": "small",
                         "avatarId": "",
-                        "__label": "Mac D6",
-                        "__collapse": false
+                        "largeAvatar": "",
+                        "avatarX": 2,
+                        "avatarY": 2,
+                        "avatarWidth": 3,
+                        "orientation": "left",
+                        "__collapse": true
                     },
-                    "id": "8aadc0a3-4c50-497b-a0d9-ecc253b2d3a0"
+                    "id": "3417c059-cce7-4a74-9fe5-d1f5d4b3036a"
                 },
                 {
-                    "command": "EVENT_TEXT",
+                    "command": "EVENT_DIALOGUE_NAME_LARGE_AVATAR",
                     "args": {
+                        "__scriptTabs": "nameTag",
                         "text": [
                             "Nobody knows. You\ncan only use it",
                             "once, then you \nhave to set it",
                             "free."
                         ],
+                        "nameTag": "Ron",
+                        "nameX": 2,
+                        "avatarType": "small",
                         "avatarId": "",
-                        "__label": "Ron D6",
-                        "__collapse": false
+                        "largeAvatar": "",
+                        "avatarX": 2,
+                        "avatarY": 2,
+                        "avatarWidth": 3,
+                        "orientation": "left",
+                        "__collapse": true
                     },
-                    "id": "20c2a728-38b0-4e89-bd40-2dad2c428adb"
+                    "id": "a828636b-4971-48ca-bfa2-5ddd3746fda7"
                 },
                 {
-                    "command": "EVENT_TEXT",
+                    "command": "EVENT_DIALOGUE_NAME_LARGE_AVATAR",
                     "args": {
+                        "__scriptTabs": "text",
                         "text": [
                             "Then I need to \nfind it. I can't",
                             "flunk out in my\nfirst year. My",
                             "parents would kill\nme."
                         ],
+                        "nameTag": "Mac",
+                        "nameX": 2,
+                        "avatarType": "small",
                         "avatarId": "",
-                        "__label": "Mac D7",
-                        "__collapse": false
+                        "largeAvatar": "",
+                        "avatarX": 2,
+                        "avatarY": 2,
+                        "avatarWidth": 3,
+                        "orientation": "left",
+                        "__collapse": true
                     },
-                    "id": "a9b55802-bc5e-4a50-9bd3-7bb0993086ee"
+                    "id": "0a21046b-8d67-4019-a0da-f9e2916f1070"
                 },
                 {
-                    "command": "EVENT_TEXT",
+                    "command": "EVENT_DIALOGUE_NAME_LARGE_AVATAR",
                     "args": {
+                        "__scriptTabs": "text",
                         "text": [
                             "Sounds like you \ngot a quest.",
-                            "Beats just \nstudying.",
-                            "I'd start looking\nat the campus",
+                            "Beats just \nstudying. I'd",
+                            "start looking\nat the campus",
                             "center."
                         ],
+                        "nameTag": "Ron",
+                        "nameX": 2,
+                        "avatarType": "small",
                         "avatarId": "",
-                        "__label": "Ron D7",
-                        "__collapse": false
+                        "largeAvatar": "",
+                        "avatarX": 2,
+                        "avatarY": 2,
+                        "avatarWidth": 3,
+                        "orientation": "left",
+                        "__collapse": true
                     },
-                    "id": "d14cacb7-fd06-45de-9e56-1ea508221863"
+                    "id": "0971b3b0-5eae-4888-90fb-8886453d5274"
                 },
                 {
-                    "command": "EVENT_TEXT",
+                    "command": "EVENT_DIALOGUE_NAME_LARGE_AVATAR",
                     "args": {
+                        "__scriptTabs": "text",
                         "text": [
                             "Awesome idea!"
                         ],
+                        "nameTag": "Mac",
+                        "nameX": 2,
+                        "avatarType": "small",
                         "avatarId": "",
-                        "__label": "Mac D8",
-                        "__collapse": false
+                        "largeAvatar": "",
+                        "avatarX": 2,
+                        "avatarY": 2,
+                        "avatarWidth": 3,
+                        "orientation": "left"
                     },
-                    "id": "3d17a5b6-d106-462c-850c-0265b6519e24"
+                    "id": "8a08f7eb-b1d3-4157-b005-3347e97e2aa7"
                 },
                 {
                     "command": "EVENT_ACTOR_MOVE_RELATIVE",
@@ -34099,28 +34644,42 @@
                     "id": "186f15d5-ef4c-4fa6-b051-8001bfd2c189"
                 },
                 {
-                    "command": "EVENT_TEXT",
+                    "command": "EVENT_DIALOGUE_NAME_LARGE_AVATAR",
                     "args": {
+                        "__scriptTabs": "text",
                         "text": [
                             "You coming Ron?"
                         ],
+                        "nameTag": "Mac",
+                        "nameX": 2,
+                        "avatarType": "small",
                         "avatarId": "",
-                        "__collapse": false,
-                        "__label": "Mac D9"
+                        "largeAvatar": "",
+                        "avatarX": 2,
+                        "avatarY": 2,
+                        "avatarWidth": 3,
+                        "orientation": "left"
                     },
-                    "id": "e66ee07b-8b46-4b1e-a030-e45afc30080e"
+                    "id": "8baf8fdf-f333-4b9e-9219-803c3319ea91"
                 },
                 {
-                    "command": "EVENT_TEXT",
+                    "command": "EVENT_DIALOGUE_NAME_LARGE_AVATAR",
                     "args": {
+                        "__scriptTabs": "nameTag",
                         "text": [
                             "Nah, I'm gonna get\nhigh insetad."
                         ],
+                        "nameTag": "Ron",
+                        "nameX": 2,
+                        "avatarType": "small",
                         "avatarId": "",
-                        "__label": "Ron D8",
-                        "__collapse": false
+                        "largeAvatar": "",
+                        "avatarX": 2,
+                        "avatarY": 2,
+                        "avatarWidth": 3,
+                        "orientation": "left"
                     },
-                    "id": "e5ad4eb6-eba5-45b4-8fc9-e0f95792f42c"
+                    "id": "06df4b49-e499-4c8b-8d93-7429ec1c03fc"
                 }
             ]
         },
@@ -34938,6 +35497,14 @@
     ],
     "music": [
         {
+            "id": "dc96b880-b93f-438a-9bd7-61a56f8274e9",
+            "name": "song_template 1",
+            "symbol": "song_song_template_1",
+            "filename": "song_template 1.uge",
+            "settings": {},
+            "type": "uge"
+        },
+        {
             "id": "bfcbcb06-5317-4a6e-8d91-211c630ffcef",
             "name": "song_template",
             "symbol": "song_song_template",
@@ -34950,7 +35517,19 @@
             "name": "template",
             "symbol": "song_template",
             "filename": "template.mod",
-            "settings": {},
+            "settings": {
+                "disableSpeedConversion": true
+            },
+            "type": "mod"
+        },
+        {
+            "id": "e9c70c77-0287-4214-b045-3b0f15e0f9a8",
+            "name": "title_screen",
+            "symbol": "song_title_screen",
+            "filename": "title_screen.mod",
+            "settings": {
+                "disableSpeedConversion": false
+            },
             "type": "mod"
         }
     ],
@@ -35091,9 +35670,9 @@
         }
     ],
     "settings": {
-        "startSceneId": "e6625667-d81e-43b1-aef0-d764bf355d96",
-        "startX": 10,
-        "startY": 9,
+        "startSceneId": "b5c14b3f-f80c-4289-a88e-db40f466b4fd",
+        "startX": 19,
+        "startY": 16,
         "startMoveSpeed": 1,
         "startAnimSpeed": 7,
         "startDirection": "down",
@@ -35101,9 +35680,9 @@
         "showConnections": true,
         "showCollisionSlopeTiles": false,
         "showCollisionExtraTiles": false,
-        "worldScrollX": 6045,
-        "worldScrollY": 8012,
-        "zoom": 250,
+        "worldScrollX": 5515,
+        "worldScrollY": 7303,
+        "zoom": 225,
         "customColorsEnabled": false,
         "sgbEnabled": false,
         "customHead": "",
@@ -35141,12 +35720,12 @@
         "defaultPlayerSprites": {
             "TOPDOWN": "3dd2d720-bc98-44aa-af26-786922cfc1df",
             "PLATFORM": "3dd2d720-bc98-44aa-af26-786922cfc1df",
-            "ADVENTURE": "581d34d0-9591-4e6e-a609-1d94f203b0cd",
-            "SHMUP": "581d34d0-9591-4e6e-a609-1d94f203b0cd",
-            "POINTNCLICK": "6551ba57-6dcc-4886-872d-c581e266ca3a",
+            "ADVENTURE": "3dd2d720-bc98-44aa-af26-786922cfc1df",
+            "SHMUP": "3dd2d720-bc98-44aa-af26-786922cfc1df",
+            "POINTNCLICK": "9d16f124-462f-4e9b-829b-b0ec0b470ece",
             "LOGO": "581d34d0-9591-4e6e-a609-1d94f203b0cd"
         },
-        "musicDriver": "huge",
+        "musicDriver": "gbt",
         "cartType": "mbc5",
         "batterylessEnabled": false,
         "favoriteEvents": [
