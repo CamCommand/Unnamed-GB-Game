@@ -2537,8 +2537,8 @@
                             "command": "EVENT_SWITCH_SCENE",
                             "args": {
                                 "sceneId": "3ab8c117-4469-4bb9-850f-4e576e50a920",
-                                "x": 13,
-                                "y": 4,
+                                "x": 14,
+                                "y": 3,
                                 "direction": "",
                                 "fadeSpeed": "2"
                             },
@@ -2762,18 +2762,14 @@
             "name": "Front of Funnelle",
             "backgroundId": "56648a31-725a-4e95-8e98-85c0f794f5bb",
             "width": 30,
-            "height": 20,
+            "height": 18,
             "type": "TOPDOWN",
             "paletteIds": [],
             "spritePaletteIds": [],
             "collisions": [
-                15,
-                15,
-                15,
-                15,
-                15,
-                15,
-                15,
+                0,
+                0,
+                0,
                 15,
                 15,
                 15,
@@ -2798,10 +2794,6 @@
                 15,
                 15,
                 15,
-                0,
-                0,
-                0,
-                0,
                 0,
                 0,
                 0,
@@ -2826,13 +2818,6 @@
                 0,
                 0,
                 0,
-                15,
-                15,
-                0,
-                0,
-                0,
-                0,
-                0,
                 0,
                 0,
                 0,
@@ -2851,13 +2836,6 @@
                 0,
                 0,
                 0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                15,
-                15,
                 0,
                 0,
                 0,
@@ -2886,8 +2864,6 @@
                 0,
                 0,
                 0,
-                15,
-                15,
                 0,
                 0,
                 0,
@@ -2911,6 +2887,7 @@
                 0,
                 0,
                 0,
+                15,
                 0,
                 0,
                 0,
@@ -2918,6 +2895,8 @@
                 0,
                 15,
                 15,
+                15,
+                15,
                 0,
                 0,
                 0,
@@ -2926,6 +2905,10 @@
                 0,
                 0,
                 0,
+                15,
+                15,
+                15,
+                15,
                 0,
                 0,
                 0,
@@ -2934,10 +2917,16 @@
                 0,
                 0,
                 0,
+                15,
+                15,
                 0,
                 0,
                 0,
                 0,
+                15,
+                15,
+                15,
+                15,
                 0,
                 0,
                 0,
@@ -2946,6 +2935,8 @@
                 0,
                 0,
                 0,
+                15,
+                15,
                 15,
                 15,
                 0,
@@ -2960,6 +2951,8 @@
                 0,
                 0,
                 0,
+                15,
+                15,
                 0,
                 0,
                 0,
@@ -2976,11 +2969,11 @@
                 0,
                 0,
                 0,
-                15,
-                15,
                 0,
                 0,
                 0,
+                15,
+                15,
                 0,
                 0,
                 0,
@@ -2988,6 +2981,8 @@
                 0,
                 0,
                 0,
+                15,
+                15,
                 0,
                 0,
                 0,
@@ -3008,21 +3003,8 @@
                 0,
                 15,
                 15,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
+                15,
+                15,
                 0,
                 0,
                 0,
@@ -3036,8 +3018,6 @@
                 0,
                 0,
                 0,
-                15,
-                15,
                 0,
                 0,
                 0,
@@ -3066,7 +3046,6 @@
                 0,
                 0,
                 0,
-                15,
                 0,
                 0,
                 0,
@@ -3187,7 +3166,6 @@
                 0,
                 0,
                 0,
-                15,
                 0,
                 0,
                 0,
@@ -3216,8 +3194,6 @@
                 0,
                 0,
                 0,
-                15,
-                15,
                 0,
                 0,
                 0,
@@ -3246,8 +3222,6 @@
                 0,
                 0,
                 0,
-                15,
-                15,
                 0,
                 0,
                 0,
@@ -3276,8 +3250,6 @@
                 0,
                 0,
                 0,
-                15,
-                15,
                 0,
                 0,
                 0,
@@ -3306,8 +3278,6 @@
                 0,
                 0,
                 0,
-                15,
-                15,
                 0,
                 0,
                 0,
@@ -3336,52 +3306,22 @@
                 0,
                 0,
                 0,
-                15,
-                15,
-                15,
-                15,
-                15,
-                15,
-                15,
-                15,
-                15,
-                15,
-                15,
-                15,
-                15,
-                15,
-                15,
-                15,
-                15,
-                15,
-                15,
-                15,
-                15,
-                15,
-                15,
-                15,
-                15,
-                15,
-                15,
-                15,
-                15,
-                15,
-                15
+                0
             ],
             "autoFadeSpeed": 1,
             "id": "3ab8c117-4469-4bb9-850f-4e576e50a920",
             "symbol": "scene_0",
-            "x": 2983.6410256410236,
-            "y": 3175.753846153846,
+            "x": 3007.0695970695956,
+            "y": 3232.420512820512,
             "actors": [],
             "triggers": [
                 {
                     "name": "",
                     "id": "8a73733a-689a-491b-9f86-10e7c055e1af",
-                    "x": 12,
-                    "y": 2,
+                    "x": 14,
+                    "y": 1,
                     "symbol": "trigger_3",
-                    "width": 4,
+                    "width": 2,
                     "height": 1,
                     "script": [
                         {
@@ -3405,7 +3345,7 @@
                     "y": 10,
                     "symbol": "trigger_25",
                     "width": 1,
-                    "height": 4,
+                    "height": 2,
                     "script": [
                         {
                             "command": "EVENT_SWITCH_SCENE",
@@ -3417,6 +3357,92 @@
                                 "fadeSpeed": "2"
                             },
                             "id": "2da29f5e-97d5-4b40-b672-aad234f8d281"
+                        }
+                    ],
+                    "leaveScript": []
+                },
+                {
+                    "name": "",
+                    "id": "4890a967-81af-45be-aa90-949446c80fba",
+                    "x": 0,
+                    "y": 2,
+                    "symbol": "trigger_27",
+                    "width": 1,
+                    "height": 2,
+                    "script": [
+                        {
+                            "command": "EVENT_TEXT",
+                            "args": {
+                                "text": [
+                                    "No reason to go\nthis way."
+                                ],
+                                "avatarId": ""
+                            },
+                            "id": "a960aed1-2775-4db5-9b6a-a5a4b5062c50"
+                        }
+                    ],
+                    "leaveScript": []
+                },
+                {
+                    "name": "",
+                    "id": "f0077fce-fa27-4421-a333-4253c2bc12dc",
+                    "x": 0,
+                    "y": 10,
+                    "symbol": "trigger_28",
+                    "width": 1,
+                    "height": 2,
+                    "script": [
+                        {
+                            "command": "EVENT_TEXT",
+                            "args": {
+                                "text": [
+                                    "Can' think of why\nI'd want  to go."
+                                ],
+                                "avatarId": ""
+                            },
+                            "id": "3fe567af-3724-43d6-8ae5-dc0e4f5344f5"
+                        }
+                    ],
+                    "leaveScript": []
+                },
+                {
+                    "name": "",
+                    "id": "cc6a2f75-2d65-4802-b793-2e15f896173b",
+                    "x": 10,
+                    "y": 10,
+                    "symbol": "trigger_29",
+                    "width": 1,
+                    "height": 2,
+                    "script": [
+                        {
+                            "command": "EVENT_IF_TRUE",
+                            "args": {
+                                "variable": "L0",
+                                "__collapseElse": false
+                            },
+                            "children": {
+                                "true": [],
+                                "false": [
+                                    {
+                                        "command": "EVENT_TEXT",
+                                        "args": {
+                                            "text": [
+                                                "I hate this crack."
+                                            ],
+                                            "avatarId": ""
+                                        },
+                                        "id": "f7f7bf80-73d1-4e39-aacc-420925892eee"
+                                    },
+                                    {
+                                        "command": "EVENT_SET_TRUE",
+                                        "args": {
+                                            "variable": "L0"
+                                        },
+                                        "id": "4d0fe738-8fa2-4354-aba1-a2ff6e51bdcb"
+                                    }
+                                ]
+                            },
+                            "id": "950a9727-65c9-4338-aed4-53bba8694352"
                         }
                     ],
                     "leaveScript": []
@@ -3459,7 +3485,8 @@
             "playerHit1Script": [],
             "playerHit2Script": [],
             "playerHit3Script": [],
-            "playerSpriteSheetId": ""
+            "playerSpriteSheetId": "",
+            "notes": "Learn to animate my flowers later. \nMaybe before demo?"
         },
         {
             "name": "West of Quad",
@@ -12321,8 +12348,8 @@
                             "command": "EVENT_SWITCH_SCENE",
                             "args": {
                                 "sceneId": "3ab8c117-4469-4bb9-850f-4e576e50a920",
-                                "x": 27,
-                                "y": 12,
+                                "x": 26,
+                                "y": 11,
                                 "direction": "",
                                 "fadeSpeed": "2"
                             },
@@ -28649,9 +28676,9 @@
             "name": "VerticalWalk",
             "symbol": "bg_verticalwalk",
             "width": 30,
-            "height": 20,
+            "height": 18,
             "imageWidth": 240,
-            "imageHeight": 160,
+            "imageHeight": 144,
             "filename": "VerticalWalk.png",
             "tileColors": []
         },
@@ -36932,9 +36959,9 @@
         }
     ],
     "settings": {
-        "startSceneId": "e6625667-d81e-43b1-aef0-d764bf355d96",
-        "startX": 10,
-        "startY": 9,
+        "startSceneId": "3ab8c117-4469-4bb9-850f-4e576e50a920",
+        "startX": 14,
+        "startY": 4,
         "startMoveSpeed": 1,
         "startAnimSpeed": 7,
         "startDirection": "down",
@@ -36942,9 +36969,9 @@
         "showConnections": true,
         "showCollisionSlopeTiles": false,
         "showCollisionExtraTiles": false,
-        "worldScrollX": 5840,
-        "worldScrollY": 8153,
-        "zoom": 250,
+        "worldScrollX": 11752,
+        "worldScrollY": 12843,
+        "zoom": 400,
         "customColorsEnabled": false,
         "sgbEnabled": false,
         "customHead": "",
