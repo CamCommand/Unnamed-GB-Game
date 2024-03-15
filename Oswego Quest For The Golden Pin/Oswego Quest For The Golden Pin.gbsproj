@@ -1853,7 +1853,7 @@
             "autoFadeSpeed": 1,
             "id": "b5c14b3f-f80c-4289-a88e-db40f466b4fd",
             "symbol": "scene_2",
-            "x": 2721.52961287079,
+            "x": 2745.52961287079,
             "y": 3212.240321769735,
             "actors": [
                 {
@@ -1899,8 +1899,8 @@
                             "args": {
                                 "text": [
                                     "Oh boy, do I love\nmail!",
-                                    "I could sit here\nsorting all day",
-                                    "sorting these\njuicy letters."
+                                    "I could sit here\nsorting all day.",
+                                    "Sorting these\njuicy letters."
                                 ],
                                 "avatarId": ""
                             },
@@ -2421,15 +2421,15 @@
                     "symbol": "actor_32",
                     "script": [
                         {
-                            "command": "EVENT_TEXT",
+                            "command": "EVENT_CALL_CUSTOM_EVENT",
                             "args": {
-                                "text": [
-                                    "Trash...\n",
-                                    "Cool!"
-                                ],
-                                "avatarId": ""
+                                "customEventId": "4c947ab6-4a76-4619-8559-7000b2d320d7",
+                                "$variable[V0]$": {
+                                    "type": "variable",
+                                    "value": "L0"
+                                }
                             },
-                            "id": "6748e65e-a4ad-4934-a2d0-2697917c5b5a"
+                            "id": "00150f97-035c-4b51-84b3-eb1e7db64d0d"
                         }
                     ],
                     "startScript": [],
@@ -2456,15 +2456,15 @@
                     "symbol": "actor_33",
                     "script": [
                         {
-                            "command": "EVENT_TEXT",
+                            "command": "EVENT_CALL_CUSTOM_EVENT",
                             "args": {
-                                "text": [
-                                    "Someone poured old\ncoffee over half",
-                                    "a ruben sandwich."
-                                ],
-                                "avatarId": ""
+                                "customEventId": "4c947ab6-4a76-4619-8559-7000b2d320d7",
+                                "$variable[V0]$": {
+                                    "type": "variable",
+                                    "value": "L3"
+                                }
                             },
-                            "id": "805ecfa6-bfe5-4135-9f65-8691787bab5a"
+                            "id": "ddcf37b7-1191-4978-b7b0-f3388874b6b7"
                         }
                     ],
                     "startScript": [],
@@ -2474,7 +2474,8 @@
                     "hit3Script": [],
                     "id": "c38aba3f-23c9-4e02-a449-3208894f8916",
                     "x": 5,
-                    "y": 19
+                    "y": 19,
+                    "notes": "Add mirror to trash"
                 }
             ],
             "triggers": [
@@ -2756,7 +2757,8 @@
             "playerHit1Script": [],
             "playerHit2Script": [],
             "playerHit3Script": [],
-            "playerSpriteSheetId": "214b418e-324c-46c5-a6ef-3d9fe096018e"
+            "playerSpriteSheetId": "214b418e-324c-46c5-a6ef-3d9fe096018e",
+            "notes": "PROOF READ ALL NPCS\nALSO TEXT DUMP THEIR SHIT"
         },
         {
             "name": "Front of Funnelle",
@@ -3311,9 +3313,55 @@
             "autoFadeSpeed": 1,
             "id": "3ab8c117-4469-4bb9-850f-4e576e50a920",
             "symbol": "scene_0",
-            "x": 3007.0695970695956,
-            "y": 3232.420512820512,
-            "actors": [],
+            "x": 3009.221112221111,
+            "y": 3229.8750582750577,
+            "actors": [
+                {
+                    "name": "Street Kid",
+                    "frame": 0,
+                    "animate": false,
+                    "spriteSheetId": "b66fddf6-3839-43f1-a6b9-7b185d5a19b2",
+                    "direction": "right",
+                    "moveSpeed": 1,
+                    "animSpeed": 15,
+                    "paletteId": "",
+                    "isPinned": false,
+                    "persistent": false,
+                    "collisionGroup": "",
+                    "symbol": "actor_34",
+                    "script": [
+                        {
+                            "command": "EVENT_TEXT",
+                            "args": {
+                                "text": [
+                                    "Happy Birthday!",
+                                    "Sike.",
+                                    "Idiot.",
+                                    "Today is nobodys\nbirthday."
+                                ],
+                                "avatarId": ""
+                            },
+                            "id": "8310d8ab-9584-4537-a379-2555f71d75d9"
+                        }
+                    ],
+                    "startScript": [],
+                    "updateScript": [
+                        {
+                            "command": "EVENT_CALL_CUSTOM_EVENT",
+                            "args": {
+                                "customEventId": "b5599d46-5b80-4169-b6d1-c151e57bb82f"
+                            },
+                            "id": "099d3d7e-2352-449a-b36e-d760f5553574"
+                        }
+                    ],
+                    "hit1Script": [],
+                    "hit2Script": [],
+                    "hit3Script": [],
+                    "id": "86d22e4e-0611-4b64-ab06-2c428ebeda17",
+                    "x": 18,
+                    "y": 11
+                }
+            ],
             "triggers": [
                 {
                     "name": "",
@@ -3396,7 +3444,7 @@
                             "command": "EVENT_TEXT",
                             "args": {
                                 "text": [
-                                    "Can' think of why\nI'd want  to go."
+                                    "Can't think of why\nI'd want to go."
                                 ],
                                 "avatarId": ""
                             },
@@ -23797,7 +23845,7 @@
                             "args": {
                                 "variable": "L0",
                                 "__collapseElse": false,
-                                "__collapse": false
+                                "__collapse": true
                             },
                             "children": {
                                 "true": [
@@ -36001,7 +36049,8 @@
                         "value": "0",
                         "minValue": 1,
                         "maxValue": 2,
-                        "clamp": false
+                        "clamp": false,
+                        "__collapse": false
                     },
                     "id": "19cfc066-c818-4edf-908e-c5c89c98b279"
                 },
@@ -36782,6 +36831,499 @@
                     "id": "a671d2d5-ba78-49ca-b46a-323ccbeeb511"
                 }
             ]
+        },
+        {
+            "id": "4c947ab6-4a76-4619-8559-7000b2d320d7",
+            "name": "Trash Script",
+            "description": "",
+            "variables": {
+                "V0": {
+                    "id": "V0",
+                    "name": "Variable A",
+                    "passByReference": true
+                }
+            },
+            "actors": {},
+            "symbol": "script_11",
+            "script": [
+                {
+                    "command": "EVENT_RNG_SEED",
+                    "args": {},
+                    "id": "6c69b43e-491d-415a-b48d-ca2a96c483a3"
+                },
+                {
+                    "command": "EVENT_IF_VALUE",
+                    "args": {
+                        "variable": "V0",
+                        "operator": "==",
+                        "comparator": "0",
+                        "__collapseElse": false
+                    },
+                    "children": {
+                        "true": [
+                            {
+                                "command": "EVENT_VARIABLE_MATH",
+                                "args": {
+                                    "vectorX": "V0",
+                                    "operation": "set",
+                                    "other": "rnd",
+                                    "vectorY": "V0",
+                                    "value": "0",
+                                    "minValue": 1,
+                                    "maxValue": 27,
+                                    "clamp": false
+                                },
+                                "id": "bad0a3be-ebed-4022-add3-d313a8170b04"
+                            }
+                        ],
+                        "false": []
+                    },
+                    "id": "b0965870-61a2-4e49-8ded-a74ed3eeef3b"
+                },
+                {
+                    "command": "EVENT_SWITCH",
+                    "args": {
+                        "variable": "V0",
+                        "choices": 16,
+                        "__collapseCase0": false,
+                        "value0": 1,
+                        "__collapseCase1": false,
+                        "value1": 2,
+                        "__collapseCase2": false,
+                        "value2": 3,
+                        "__collapseCase3": false,
+                        "value3": 4,
+                        "__collapseCase4": false,
+                        "value4": 5,
+                        "__collapseCase5": false,
+                        "value5": 6,
+                        "__collapseCase6": false,
+                        "value6": 7,
+                        "__collapseCase7": false,
+                        "value7": 8,
+                        "__collapseCase8": false,
+                        "value8": 9,
+                        "__collapseCase9": false,
+                        "value9": 10,
+                        "__collapseCase10": false,
+                        "value10": 11,
+                        "__collapseCase11": false,
+                        "value11": 12,
+                        "__collapseCase12": false,
+                        "value12": 13,
+                        "__collapseCase13": false,
+                        "value13": 14,
+                        "__collapseCase14": false,
+                        "value14": 15,
+                        "__collapseCase15": false,
+                        "value15": 16,
+                        "__collapseElse": true,
+                        "__collapse": true
+                    },
+                    "children": {
+                        "true0": [
+                            {
+                                "command": "EVENT_TEXT",
+                                "args": {
+                                    "text": [
+                                        "Someone poured old\ncoffee over half",
+                                        "a Ruben sandwich."
+                                    ],
+                                    "avatarId": "",
+                                    "__collapse": false
+                                },
+                                "id": "8795b8bd-457d-45a4-b24b-52526c076734"
+                            }
+                        ],
+                        "true1": [
+                            {
+                                "command": "EVENT_TEXT",
+                                "args": {
+                                    "text": [
+                                        "There's a discard \nmotherboard in",
+                                        "here. Someone\npoured their ",
+                                        "breakfast over it."
+                                    ],
+                                    "avatarId": ""
+                                },
+                                "id": "be2af0f2-54a7-4352-a393-b29001687c85"
+                            }
+                        ],
+                        "true2": [
+                            {
+                                "command": "EVENT_TEXT",
+                                "args": {
+                                    "text": [
+                                        "Trash, trash, \ntrash! ",
+                                        "I’m gonna eat all \nthe trash!"
+                                    ],
+                                    "avatarId": ""
+                                },
+                                "id": "811a9fa2-7dcb-48fb-ac7b-269929dd3d9d"
+                            }
+                        ],
+                        "true3": [
+                            {
+                                "command": "EVENT_TEXT",
+                                "args": {
+                                    "text": [
+                                        "This can is empty.",
+                                        "And so are you."
+                                    ],
+                                    "avatarId": ""
+                                },
+                                "id": "40e15daa-8954-4387-89b7-2fa7679b5d38"
+                            }
+                        ],
+                        "true4": [
+                            {
+                                "command": "EVENT_TEXT",
+                                "args": {
+                                    "text": [
+                                        "That’s forty or so\nloose Tacoland ",
+                                        "receipts crumbled \nat the top."
+                                    ],
+                                    "avatarId": ""
+                                },
+                                "id": "86a558fd-121e-4496-a208-7aa318ac92dd"
+                            }
+                        ],
+                        "true5": [
+                            {
+                                "command": "EVENT_TEXT",
+                                "args": {
+                                    "text": [
+                                        "Inside is a ruined\nart project. ",
+                                        "Tossed away and \nforgotten."
+                                    ],
+                                    "avatarId": ""
+                                },
+                                "id": "f31e2617-ce5e-4867-a70d-5fcaefb80147"
+                            }
+                        ],
+                        "true6": [
+                            {
+                                "command": "EVENT_TEXT",
+                                "args": {
+                                    "text": [
+                                        "It smells horrible\nin there."
+                                    ],
+                                    "avatarId": ""
+                                },
+                                "id": "46ca193b-806c-4f1e-a353-446a814ffc11"
+                            }
+                        ],
+                        "true7": [
+                            {
+                                "command": "EVENT_TEXT",
+                                "args": {
+                                    "text": [
+                                        "Not bad."
+                                    ],
+                                    "avatarId": ""
+                                },
+                                "id": "d362b0a2-ea5c-4a6e-bf77-8344d97fc5a7"
+                            }
+                        ],
+                        "true8": [
+                            {
+                                "command": "EVENT_TEXT",
+                                "args": {
+                                    "text": [
+                                        "There isn't even\na bag inside, but ",
+                                        "someone still \nthrew out their ",
+                                        "lunch."
+                                    ],
+                                    "avatarId": ""
+                                },
+                                "id": "bfa2bc7d-9c50-44ef-8986-ef9168abc136"
+                            }
+                        ],
+                        "true9": [
+                            {
+                                "command": "EVENT_TEXT",
+                                "args": {
+                                    "text": [
+                                        "A smelly bin for a\nstinky guy."
+                                    ],
+                                    "avatarId": ""
+                                },
+                                "id": "584947b3-ee75-4cb1-97e4-ea6d1c9f267d"
+                            }
+                        ],
+                        "true10": [
+                            {
+                                "command": "EVENT_TEXT",
+                                "args": {
+                                    "text": [
+                                        "There's no room \nfor any more",
+                                        "garbage."
+                                    ],
+                                    "avatarId": ""
+                                },
+                                "id": "d6ad1642-29b8-4a3e-b1d1-214257234202"
+                            }
+                        ],
+                        "true11": [
+                            {
+                                "command": "EVENT_TEXT",
+                                "args": {
+                                    "text": [
+                                        "That's something, \nbut not what I'm ",
+                                        "looking for."
+                                    ],
+                                    "avatarId": ""
+                                },
+                                "id": "e9c4fb54-1dcf-4fd5-807e-219f46c55aa2"
+                            }
+                        ],
+                        "true12": [
+                            {
+                                "command": "EVENT_TEXT",
+                                "args": {
+                                    "text": [
+                                        "So much soda, \nto what end?"
+                                    ],
+                                    "avatarId": ""
+                                },
+                                "id": "ed9dc30e-1949-4747-88cc-7902be8f4a84"
+                            }
+                        ],
+                        "true13": [
+                            {
+                                "command": "EVENT_TEXT",
+                                "args": {
+                                    "text": [
+                                        "Boldly go, where\nno nose has gone",
+                                        "before."
+                                    ],
+                                    "avatarId": ""
+                                },
+                                "id": "7d3c8990-17c2-45da-81ca-6a42ee4135c6"
+                            }
+                        ],
+                        "true14": [
+                            {
+                                "command": "EVENT_TEXT",
+                                "args": {
+                                    "text": [
+                                        "What do I gain\nfrom looking",
+                                        "in these?"
+                                    ],
+                                    "avatarId": ""
+                                },
+                                "id": "0d15e92e-5e76-4dcf-a03e-96e82303c9be"
+                            }
+                        ],
+                        "true15": [
+                            {
+                                "command": "EVENT_TEXT",
+                                "args": {
+                                    "text": [
+                                        "Golden Pin? ",
+                                        "No, that's a bug."
+                                    ],
+                                    "avatarId": ""
+                                },
+                                "id": "66263d3b-51e6-4675-9622-00c45be62ec2"
+                            }
+                        ],
+                        "false": []
+                    },
+                    "id": "d3115dd8-1d9b-4ed6-9644-1b84828c548a"
+                },
+                {
+                    "command": "EVENT_SWITCH",
+                    "args": {
+                        "variable": "V0",
+                        "choices": 11,
+                        "__collapseCase0": false,
+                        "value0": 17,
+                        "__collapseCase1": false,
+                        "value1": 18,
+                        "__collapseCase2": false,
+                        "value2": 19,
+                        "__collapseCase3": false,
+                        "value3": 20,
+                        "__collapseCase4": false,
+                        "value4": 21,
+                        "__collapseCase5": false,
+                        "value5": 22,
+                        "__collapseCase6": false,
+                        "value6": 23,
+                        "__collapseCase7": false,
+                        "value7": 24,
+                        "__collapseCase8": false,
+                        "value8": 25,
+                        "__collapseCase9": false,
+                        "value9": 26,
+                        "__collapseCase10": false,
+                        "value10": 27,
+                        "__collapseCase11": false,
+                        "value11": 12,
+                        "__collapseCase12": false,
+                        "value12": 13,
+                        "__collapseCase13": false,
+                        "value13": 14,
+                        "__collapseCase14": false,
+                        "value14": 15,
+                        "__collapseCase15": false,
+                        "value15": 16,
+                        "__collapseElse": false,
+                        "__collapse": true,
+                        "__comment": false
+                    },
+                    "children": {
+                        "true0": [
+                            {
+                                "command": "EVENT_TEXT",
+                                "args": {
+                                    "text": [
+                                        "Mmmmmh. ",
+                                        "Mold, awesome."
+                                    ],
+                                    "avatarId": ""
+                                },
+                                "id": "9f9f583b-e2e4-4da8-9c02-a5538cf41cee"
+                            }
+                        ],
+                        "true1": [
+                            {
+                                "command": "EVENT_TEXT",
+                                "args": {
+                                    "text": [
+                                        "One of these \nshould have some ",
+                                        "epic loot in them.\nHidden item? ",
+                                        "Quest? Come on."
+                                    ],
+                                    "avatarId": ""
+                                },
+                                "id": "6a489160-43df-4d72-9da5-0eebe9e38f4a"
+                            }
+                        ],
+                        "true2": [
+                            {
+                                "command": "EVENT_TEXT",
+                                "args": {
+                                    "text": [
+                                        "Despite all my\nfailures,",
+                                        "there is still\ntrash."
+                                    ],
+                                    "avatarId": ""
+                                },
+                                "id": "7f473c14-2079-40cb-95fd-8e42998b9ef9"
+                            }
+                        ],
+                        "true3": [
+                            {
+                                "command": "EVENT_TEXT",
+                                "args": {
+                                    "text": [
+                                        "What a rubbish \nbin."
+                                    ],
+                                    "avatarId": ""
+                                },
+                                "id": "9044bbb8-d553-492f-96db-ed8328c78981"
+                            }
+                        ],
+                        "true4": [
+                            {
+                                "command": "EVENT_TEXT",
+                                "args": {
+                                    "text": [
+                                        "Oh look! ",
+                                        "My grades if I \ndon't focus."
+                                    ],
+                                    "avatarId": ""
+                                },
+                                "id": "61c7c80d-5982-46c1-93ca-1e397191cb89"
+                            }
+                        ],
+                        "true5": [
+                            {
+                                "command": "EVENT_TEXT",
+                                "args": {
+                                    "text": [
+                                        "Any YouTube \npranksters?",
+                                        "Guess not."
+                                    ],
+                                    "avatarId": ""
+                                },
+                                "id": "07a1b8e4-3d58-4a4f-ab6e-eabff62b23fd"
+                            }
+                        ],
+                        "true6": [
+                            {
+                                "command": "EVENT_TEXT",
+                                "args": {
+                                    "text": [
+                                        "Is it half full of\nslime, ",
+                                        "or half empty?"
+                                    ],
+                                    "avatarId": ""
+                                },
+                                "id": "1a10accc-0a99-40dc-aad1-819d57885eab"
+                            }
+                        ],
+                        "true7": [
+                            {
+                                "command": "EVENT_TEXT",
+                                "args": {
+                                    "text": [
+                                        "Ron would love to \nlook at this."
+                                    ],
+                                    "avatarId": ""
+                                },
+                                "id": "02fe93aa-e07b-41bc-b641-38d55953eb1c"
+                            }
+                        ],
+                        "true8": [
+                            {
+                                "command": "EVENT_TEXT",
+                                "args": {
+                                    "text": [
+                                        "In the end, \nit was nasty."
+                                    ],
+                                    "avatarId": ""
+                                },
+                                "id": "635c8088-1919-4d99-aa82-e7637c56f8aa"
+                            }
+                        ],
+                        "true9": [
+                            {
+                                "command": "EVENT_TEXT",
+                                "args": {
+                                    "text": [
+                                        "Winner winner, \nstinky dinner."
+                                    ],
+                                    "avatarId": ""
+                                },
+                                "id": "4023cfa2-88b3-471b-a151-d830117368a5"
+                            }
+                        ],
+                        "true10": [
+                            {
+                                "command": "EVENT_TEXT",
+                                "args": {
+                                    "text": [
+                                        "The new trash bag \nsmells like the ",
+                                        "first from the\nbox."
+                                    ],
+                                    "avatarId": ""
+                                },
+                                "id": "631f1af4-631c-4f24-b008-1cd25d2ec73f"
+                            }
+                        ],
+                        "true11": [],
+                        "true12": [],
+                        "true13": [],
+                        "true14": [],
+                        "true15": [],
+                        "false": []
+                    },
+                    "id": "267db99c-caee-499a-929b-6642a176b6ad"
+                }
+            ]
         }
     ],
     "music": [
@@ -36959,9 +37501,9 @@
         }
     ],
     "settings": {
-        "startSceneId": "3ab8c117-4469-4bb9-850f-4e576e50a920",
-        "startX": 14,
-        "startY": 4,
+        "startSceneId": "b5c14b3f-f80c-4289-a88e-db40f466b4fd",
+        "startX": 7,
+        "startY": 17,
         "startMoveSpeed": 1,
         "startAnimSpeed": 7,
         "startDirection": "down",
@@ -36969,9 +37511,9 @@
         "showConnections": true,
         "showCollisionSlopeTiles": false,
         "showCollisionExtraTiles": false,
-        "worldScrollX": 11752,
-        "worldScrollY": 12843,
-        "zoom": 400,
+        "worldScrollX": 5565,
+        "worldScrollY": 7117,
+        "zoom": 225,
         "customColorsEnabled": false,
         "sgbEnabled": false,
         "customHead": "",
@@ -37026,7 +37568,8 @@
             "EVENT_COMMENT",
             "EVENT_SET_INPUT_SCRIPT",
             "EVENT_CALL_CUSTOM_EVENT",
-            "EVENT_DIALOGUE_NAME_LARGE_AVATAR"
+            "EVENT_DIALOGUE_NAME_LARGE_AVATAR",
+            "EVENT_TEXT"
         ],
         "defaultFadeStyle": "white",
         "playerSpriteSheetId": "581d34d0-9591-4e6e-a609-1d94f203b0cd",
