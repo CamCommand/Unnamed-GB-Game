@@ -27798,12 +27798,20 @@
                     "collisionGroup": "",
                     "symbol": "actor_43",
                     "script": [],
-                    "startScript": [],
+                    "startScript": [
+                        {
+                            "command": "EVENT_ACTOR_HIDE",
+                            "args": {
+                                "actorId": "$self$"
+                            },
+                            "id": "4313f85c-9962-482f-8c2f-f26857af5b62"
+                        }
+                    ],
                     "updateScript": [],
                     "hit1Script": [],
                     "hit2Script": [],
                     "hit3Script": [],
-                    "id": "faad3326-aa1f-4b06-9f7e-175a2ba4fe12",
+                    "id": "d0ca1950-bbe6-412b-a34d-2cf31aa12dfa",
                     "x": 9,
                     "y": 21
                 }
@@ -27860,6 +27868,20 @@
                         "speed": 2
                     },
                     "id": "4fe2a946-0abd-469a-9b8f-e8bb6d851d26"
+                },
+                {
+                    "command": "EVENT_ACTOR_HIDE",
+                    "args": {
+                        "actorId": "89b1fe5b-a6e4-4ac1-8976-d793d2013f9d"
+                    },
+                    "id": "8efc1a1c-9a33-4d3e-a148-3e2d5e69d8a2"
+                },
+                {
+                    "command": "EVENT_ACTOR_SHOW",
+                    "args": {
+                        "actorId": "d0ca1950-bbe6-412b-a34d-2cf31aa12dfa"
+                    },
+                    "id": "86a7d063-56f8-4e2a-9df0-db547bcdb072"
                 },
                 {
                     "command": "EVENT_WAIT",
@@ -39647,7 +39669,7 @@
             "numFrames": 4.5,
             "type": "animated",
             "filename": "Oswego_splash3.png",
-            "checksum": "962095a42939481ca87470de0648eb90227b8ef2",
+            "checksum": "be83a7a2b6181e051f9274dfa9c4296df0795e42",
             "width": 72,
             "height": 16,
             "states": [
