@@ -27375,11 +27375,40 @@
                                         "command": "EVENT_TEXT",
                                         "args": {
                                             "text": [
-                                                "What's there to\nsave yet?"
+                                                "Just gonna take in\nmy surroundings..."
                                             ],
                                             "avatarId": ""
                                         },
                                         "id": "d170cd93-dae4-4178-9575-80c3567008b9"
+                                    },
+                                    {
+                                        "command": "EVENT_SAVE_DATA",
+                                        "args": {
+                                            "saveSlot": 0,
+                                            "__scriptTabs": "save"
+                                        },
+                                        "children": {
+                                            "true": [
+                                                {
+                                                    "command": "EVENT_TEXT",
+                                                    "args": {
+                                                        "text": [
+                                                            "Moment saved."
+                                                        ],
+                                                        "avatarId": ""
+                                                    },
+                                                    "id": "ba0c4db9-29bc-4c91-84f6-13bc46f80d58"
+                                                },
+                                                {
+                                                    "command": "EVENT_SCENE_POP_STATE",
+                                                    "args": {
+                                                        "fadeSpeed": 1
+                                                    },
+                                                    "id": "bfcdc30f-21b2-48bd-82e0-21e0fb936ae9"
+                                                }
+                                            ]
+                                        },
+                                        "id": "5e50bc45-1aeb-45f7-b3e1-fd452091e753"
                                     }
                                 ]
                             },
@@ -27508,6 +27537,17 @@
                                             "text": "quit"
                                         },
                                         "id": "4e63213b-8392-4116-bdfe-2e563f181b34"
+                                    },
+                                    {
+                                        "command": "EVENT_SWITCH_SCENE",
+                                        "args": {
+                                            "sceneId": "0d8a6b67-ca0d-456d-8bdb-221ff914005d",
+                                            "x": 0,
+                                            "y": 0,
+                                            "direction": "",
+                                            "fadeSpeed": "2"
+                                        },
+                                        "id": "9da3644b-afd7-4142-b483-c699e76121a7"
                                     }
                                 ]
                             },
@@ -28996,15 +29036,11 @@
                                 "id": "42f7e4d2-bba2-4cdd-b504-f506a2684305"
                             },
                             {
-                                "command": "EVENT_SWITCH_SCENE",
+                                "command": "EVENT_LOAD_DATA",
                                 "args": {
-                                    "sceneId": "e6625667-d81e-43b1-aef0-d764bf355d96",
-                                    "x": 12,
-                                    "y": 4,
-                                    "direction": "",
-                                    "fadeSpeed": "2"
+                                    "saveSlot": 0
                                 },
-                                "id": "8c63e6f7-e47b-4895-81b6-414e47e727c1"
+                                "id": "2c26afb3-6761-4d0e-9b5b-cd9d1c59f612"
                             }
                         ]
                     },
@@ -54242,6 +54278,11 @@
             "symbol": "var_objective_check"
         },
         {
+            "id": "4",
+            "name": "Variable 4",
+            "symbol": "var_variable_4"
+        },
+        {
             "id": "10",
             "name": "Hunt_status",
             "symbol": "var_hunt_status"
@@ -54275,11 +54316,6 @@
             "id": "dae0952a-7f0d-472f-87f6-831cc83c5ccd__L0",
             "name": "LOOP_OFFSET",
             "symbol": "var_loop_offset"
-        },
-        {
-            "id": "4",
-            "name": "Variable 4",
-            "symbol": "var_variable_4"
         }
     ],
     "engineFieldValues": [
@@ -54289,9 +54325,9 @@
         }
     ],
     "settings": {
-        "startSceneId": "8268095c-db9b-400b-9c14-dc61f289057b",
-        "startX": 120,
-        "startY": 13,
+        "startSceneId": "3ab8c117-4469-4bb9-850f-4e576e50a920",
+        "startX": 14,
+        "startY": 9,
         "startMoveSpeed": 1,
         "startAnimSpeed": 7,
         "startDirection": "down",
@@ -54299,9 +54335,9 @@
         "showConnections": true,
         "showCollisionSlopeTiles": false,
         "showCollisionExtraTiles": true,
-        "worldScrollX": 5640,
-        "worldScrollY": 6168,
-        "zoom": 225,
+        "worldScrollX": 4474,
+        "worldScrollY": 5699,
+        "zoom": 175,
         "customColorsEnabled": false,
         "sgbEnabled": false,
         "customHead": "",
