@@ -1,3 +1,3 @@
-Files for "Oswego: Quest for the Golden Pin"
+Files for "Oswego Quest for the Golden Pin"
 
-Demo to come out soon.
+Demo version 0.1.0
