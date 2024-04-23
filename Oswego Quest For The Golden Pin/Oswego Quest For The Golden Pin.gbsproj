@@ -418,9 +418,9 @@
                             "args": {
                                 "variable": "L0",
                                 "__collapseElse": false,
-                                "__comment": true,
+                                "__comment": false,
                                 "__collapse": false,
-                                "__disableElse": true
+                                "__disableElse": false
                             },
                             "children": {
                                 "true": [
@@ -30329,6 +30329,16 @@
             "tileColors": []
         },
         {
+            "id": "57463cbf-b1df-4902-83fe-aa086db05f7b",
+            "name": "Objectives_Background",
+            "symbol": "bg_objectives_background",
+            "width": 240,
+            "height": 216,
+            "imageWidth": 1920,
+            "imageHeight": 1728,
+            "filename": "Objectives_Background.png"
+        },
+        {
             "id": "d9fb1663-c1cb-477e-bae4-f3035ba61fcd",
             "name": "Objectives_Sheet",
             "symbol": "bg_objectives_sheet",
@@ -59804,7 +59814,7 @@
                     "args": {
                         "__scriptTabs": "text",
                         "text": [
-                            "Nah, I'm gonna get\nhigh insetad."
+                            "Nah, I'm gonna get\nhigh instead."
                         ],
                         "nameTag": "Ron",
                         "nameX": 2,
@@ -60685,9 +60695,9 @@
                     "args": {
                         "variable": "V0",
                         "choices": 16,
-                        "__collapseCase0": true,
+                        "__collapseCase0": false,
                         "value0": 1,
-                        "__collapseCase1": true,
+                        "__collapseCase1": false,
                         "value1": 2,
                         "__collapseCase2": true,
                         "value2": 3,
@@ -60718,7 +60728,7 @@
                         "__collapseCase15": false,
                         "value15": 16,
                         "__collapseElse": true,
-                        "__collapse": true
+                        "__collapse": false
                     },
                     "children": {
                         "true0": [
@@ -60740,7 +60750,7 @@
                                 "command": "EVENT_TEXT",
                                 "args": {
                                     "text": [
-                                        "There's a discard \nmotherboard in",
+                                        "There's a thrown\nout motherboard in",
                                         "here. Someone\npoured their ",
                                         "breakfast over it."
                                     ],
@@ -61852,9 +61862,9 @@
         }
     ],
     "settings": {
-        "startSceneId": "236260cb-f826-4c69-9fd4-a43aadc89146",
-        "startX": 7,
-        "startY": 8,
+        "startSceneId": "e6625667-d81e-43b1-aef0-d764bf355d96",
+        "startX": 5,
+        "startY": 10,
         "startMoveSpeed": 1,
         "startAnimSpeed": 7,
         "startDirection": "down",
@@ -61862,9 +61872,9 @@
         "showConnections": true,
         "showCollisionSlopeTiles": false,
         "showCollisionExtraTiles": true,
-        "worldScrollX": 5267,
-        "worldScrollY": 5268,
-        "zoom": 175,
+        "worldScrollX": 3017,
+        "worldScrollY": 3611,
+        "zoom": 125,
         "customColorsEnabled": false,
         "sgbEnabled": false,
         "customHead": "",
