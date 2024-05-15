@@ -1,3 +1,3 @@
 Files for "Oswego Quest for the Golden Pin"
 
-Demo version 0.1.0
+Demo version 0.1.2
